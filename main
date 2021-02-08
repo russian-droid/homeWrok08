@@ -25,15 +25,18 @@ Example Output
 '''
 
 
-list1=[[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
-list2=[]
+def open_or_senior(data):
+    list1=data
+    list2=[]
+    
+    searchAge = 55
+    searchHandicap = 7
+    for sublist in list1:
+        if sublist[0] >= searchAge and sublist[1] > searchHandicap:
+            list2.append("Senior")
+        else:
+            list2.append("Open")
+    return list2
 
-searchAge = 55
-searchHandicap = 7
-for sublist in list1:
-    if sublist[0] >= searchAge and sublist[1] > searchHandicap:
-        list2.append("senior")
-    else:
-        list2.append("open")
-print(list2)
-
+data=[[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
+open_or_senior(data)
