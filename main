@@ -28,13 +28,12 @@ Example Output
 list1=[[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
 list2=[]
 
-search1 = 55
-search2 = 7
+searchAge = 55
+searchHandicap = 7
 for sublist in list1:
-    if sublist[0] >= search1 and sublist[1] > search2:
+    if sublist[0] >= searchAge and sublist[1] > searchHandicap:
         list2.append("senior")
-        print("Found it!", sublist)
     else:
         list2.append("open")
-print(list2)   
-# Prints: Found it! ['a', 'c']
+print(list2)
+
