@@ -1,4 +1,4 @@
-#from codewars.com
+#CodeWars kata codewars.com
 
 '''
 The Western Suburbs Croquet Club has two categories of membership, Senior and Open. 
